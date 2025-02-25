@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Logo from "../../assets/svg/logo.svg";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -73,11 +74,11 @@ const Header = () => {
               </a>
             </li>
             <li className="nav-item mx-3">
-              <a href="https://alper-portfolio-42sn0qju6-alper-tanrikulus-projects.vercel.app/contact">
+              <Link href="/contact">
                 <button className="myButton ">
                   <span className="fs-5 fw-200 ffRoboto">Send me an email</span>
                 </button>
-              </a>
+              </Link>
             </li>
             {/* <li className="nav-item dropdown mx-3">
               <a

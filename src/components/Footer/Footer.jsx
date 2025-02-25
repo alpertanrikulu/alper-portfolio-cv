@@ -4,6 +4,7 @@ import Istanbul from "../../animations/istanbul/Istanbul";
 import Darrow from "../../assets/svg/darrow.svg";
 import Contact from "../../pages/home/components/Contact";
 import Cv from "../../assets/CV-en-fd-Alper_tanrikulu.pdf";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const containerRef1 = useRef(null);
@@ -72,7 +73,8 @@ const Footer = () => {
                   />
                 </button>
               </a>
-              <a href="https://alper-portfolio-42sn0qju6-alper-tanrikulus-projects.vercel.app/contact">
+
+              <Link href="/contact">
                 <button
                   className={`myButton my-3 mx-3 ${
                     isVisible1 ? "leftSlideAnimation1" : "rightSlideAnimation1"
@@ -80,7 +82,7 @@ const Footer = () => {
                 >
                   <span className="fs-5 fw-200">Send me an email</span>
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="row">
