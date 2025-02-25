@@ -74,7 +74,7 @@ const Header = () => {
               </a>
             </li>
             <li className="nav-item mx-3">
-              <Link href="/contact">
+              <Link href="https://alper-portfolio-1ewg6djpo-alper-tanrikulus-projects.vercel.app/contact">
                 <button className="myButton ">
                   <span className="fs-5 fw-200 ffRoboto">Send me an email</span>
                 </button>

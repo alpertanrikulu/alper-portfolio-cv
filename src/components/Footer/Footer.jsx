@@ -74,7 +74,7 @@ const Footer = () => {
                 </button>
               </a>
 
-              <Link href="/contact">
+              <Link href="https://alper-portfolio-1ewg6djpo-alper-tanrikulus-projects.vercel.app/contact">
                 <button
                   className={`myButton my-3 mx-3 ${
                     isVisible1 ? "leftSlideAnimation1" : "rightSlideAnimation1"
