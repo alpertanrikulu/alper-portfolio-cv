@@ -1,5 +1,5 @@
 import React from "react";
-import "./waves.scss";
+import "./Waves.scss";
 
 const Waves = () => {
   return (
