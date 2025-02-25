@@ -39,3 +39,4 @@ Thumbs.db
 # Test and coverage files
 coverage/
 *.lcov
+.vercel
