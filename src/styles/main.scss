@@ -1,0 +1,116 @@
+// Custom.scss
+// Option B: Include parts of Bootstrap
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "/node_modules/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+
+// 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
+@import "./custom/variables";
+@import "/node_modules/bootstrap/scss/variables";
+@import "/node_modules/bootstrap/scss/variables-dark";
+
+// 4. Include any default map overrides here
+
+// 5. Include remainder of required parts
+@import "/node_modules/bootstrap/scss/maps";
+@import "/node_modules/bootstrap/scss/mixins";
+@import "/node_modules/bootstrap/scss/root";
+
+// 6. Optionally include any other parts as needed
+@import "/node_modules/bootstrap/scss/utilities";
+@import "/node_modules/bootstrap/scss/reboot";
+@import "/node_modules/bootstrap/scss/type";
+@import "/node_modules/bootstrap/scss/images";
+@import "/node_modules/bootstrap/scss/containers";
+@import "/node_modules/bootstrap/scss/grid";
+@import "/node_modules/bootstrap/scss/helpers";
+
+@import "./custom/map-amends";
+@import "./custom/bootstrap-api-utilities";
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "/node_modules/bootstrap/scss/utilities/api";
+@import "/node_modules/bootstrap/scss/bootstrap.scss";
+
+// 8. Add additional custom code here
+
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900; /* Desteklenen ağırlık aralığı */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("/fonts/Roboto/Roboto-VariableFont_wdth,wght.ttf") format("truetype");
+  font-weight: 100 900; /* Desteklenen ağırlık aralığı */
+  font-style: normal;
+}
+
+:root {
+  --bs-body-bg: rgba(12, 19, 62, 1);
+  --bs-body-font-family: 'Playfair Display', serif;
+  --bs-body-color: white;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: var(--bs-body-font-family); /* Varsayılan font */
+}
+
+.ffRoboto {
+  font-family: 'Roboto', sans-serif; /* p için farklı font */
+}
+
+.frostedBg {
+    background: rgba(93, 161, 188, 0.05); /* Saydam beyaz */
+    backdrop-filter: blur(8px); /* Arka planı bulanıklaştır */
+    -webkit-backdrop-filter: blur(5px); /* Safari için destek */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+    transition: background-color 1s ease, color 1s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.myButton {
+  color: black;
+  background-color: rgb(251, 218, 0);
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 1s ease, color 1s ease;
+  z-index: 5;
+
+  &:hover {
+      background-color: white;
+
+      img {
+          display: none;
+      }
+  }
+}
+
+.myButton2 {
+    color: rgba(255, 255, 255, 0.3);
+    background: none;
+    border: none;
+    
+    &:hover {
+        color: rgba(251, 218, 0, 1);      
+    }
+}
+
+.custom-popover {  
+  --bs-popover-max-width: 500px;
+  --bs-popover-border-color: var(--bd-violet-bg);
+  --bs-popover-border-color: var(--bd-violet-bg);
+  --bs-popover-header-bg: rgb(255, 255, 0);
+  --bs-popover-header-color: black;
+  --bs-popover-body-padding-x: 1rem;
+  --bs-popover-body-padding-y: .5rem;
+}

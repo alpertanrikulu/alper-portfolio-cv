@@ -1,0 +1,24 @@
+
+.animatedRLinesDiv {
+    position: absolute !important;
+    top: 50%;
+    left: 15%;
+    background-color: brown;
+    }
+
+// .animatedRLines {
+//     top: -10%;
+//     animation: animatedRLines 8s ease-in-out infinite;
+    
+//     @keyframes animatedRLines {
+//         0% {
+//         transform: translateX(0px);
+//         }
+//         50% {
+//         transform: translateX(75px);
+//         }
+//         100% {
+//         transform: translateX(0px);
+//         }
+//     }
+//     }

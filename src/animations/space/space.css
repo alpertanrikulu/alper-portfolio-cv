@@ -1,0 +1,198 @@
+.saturn {
+    position: absolute;
+    left: 78vw;
+    bottom: 515px;
+}
+
+.hatman {
+    position: absolute;
+    left: 48vw;
+    bottom: -460px;
+    opacity: 0.25;
+    animation: hatman 5s infinite ease-in-out, hatmananimation 3s forwards linear;
+    animation-delay: 
+    0s, /* hatman animasyonu hemen başlasın */
+    31.5s; /* hatmananimation 30 saniye gecikmeli başlasın */
+}
+
+@keyframes hatman {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes hatmananimation {
+    0% {
+        opacity: 0.25;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.portal {
+    position: absolute;
+    left: -1vw;
+    bottom: 670px;
+    animation: portalanimation 10s infinite linear;
+    z-index: -1;
+}
+
+@keyframes portalanimation {
+    0% {
+        transform: rotateY(50deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateY(50deg) rotateZ(360deg);
+    }
+}
+
+.kidnap {
+    position: absolute;
+    left: 47vw;
+    bottom: -290px;
+    opacity: 0;
+    animation: kidnap 6s linear forwards, kidnaps 6s linear forwards;
+    animation-delay: 30s, 48s;
+}
+
+@keyframes kidnap {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.25;
+    }
+    80% {
+        opacity: 0.25;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes kidnaps {
+    0% {
+        transform: translateX(25vw) translateY(-870px);
+        opacity: 0;
+    }
+    20% {
+        transform: translateX(25vw) translateY(-870px);
+        opacity: 0.25;
+    }
+    80% {
+        transform: translateX(25vw) translateY(-870px);
+        opacity: 0.25;
+    }
+    100%{
+        transform: translateX(25vw) translateY(-865px);
+        opacity: 0;
+    }
+}
+
+.hatmans {
+    position: absolute;
+    left: 72.5vw;
+    bottom: 468px;
+    opacity: 0;
+    animation: hatmansanimation 3s linear forwards;
+    animation-delay: 49.5s;
+}
+
+@keyframes hatmansanimation {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 0.25;
+    }
+}
+
+.alien {
+    position: absolute;
+    left: -10vw;
+    bottom: 690px;
+    transform: scale(0.35);
+    animation: alienanimation 60s forwards linear;
+}
+
+@keyframes alienanimation {
+    0% {
+        transform: translateX(0vw) translateY(0px) scale(0.35);
+        opacity: 0;
+    }
+    2.5% {
+        transform: translateX(10vw) translateY(0px) scale(0.35);
+        opacity: 0.25;
+    }
+    7.5% {
+        transform: translateX(20vw) translateY(10px) scale(0.40);
+        opacity: 0.25;
+    }
+    12.5% {
+        transform: translateX(30vw) translateY(-20px) scale(0.45);
+        opacity: 0.25;
+    }
+    17.5% {
+        transform: translateX(35vw) translateY(20px) scale(0.50);
+        opacity: 0.25;
+    }
+    22.5% {
+        transform: translateX(30vw) translateY(50px) scale(0.55);
+        opacity: 0.25;
+    }
+    27.5% {
+        transform: translateX(25vw) translateY(80px) scale(0.60);
+        opacity: 0.25;
+    }
+    32.5% {
+        transform: translateX(15vw) translateY(150px) scale(0.70);
+        opacity: 0.25;
+    }
+    37.5% {
+        transform: translateX(12vw) translateY(300px) scale(0.80);
+        opacity: 0.25;
+    }
+    42.5% {
+        transform: translateX(20vw) translateY(500px) scale(0.90);
+        opacity: 0.25;
+    }
+    47.5% {
+        transform: translateX(30vw) translateY(700px) scale(0.95);
+        opacity: 0.25;
+    }
+    50% {
+        transform: translateX(48vw) translateY(800px) scale(1);
+        opacity: 0.25;
+    }
+    60% {
+        transform: translateX(48vw) translateY(800px) scale(1);
+        opacity: 0.25;
+    }
+    70% {
+        transform: translateX(60vw) translateY(200px) scale(1);
+        opacity: 0.25;
+    }
+    80% {
+        transform: translateX(72.5vw) translateY(-50px) scale(1);
+        opacity: 0.25;
+    }
+    90% {
+        transform: translateX(72.5vw) translateY(-50px) scale(1);
+        opacity: 0.25;
+    }
+    95% {
+        transform: translateX(25vw) translateY(50px) scale(0.6);
+        opacity: 0.25;
+    }
+    100% {
+        transform: translateX(0vw) translateY(0px) scale(0.35);
+        opacity: 0;
+    }
+}

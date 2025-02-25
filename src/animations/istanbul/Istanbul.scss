@@ -1,0 +1,175 @@
+.street {
+    position: relative;
+    height: 500px; 
+    width: 100%;
+}
+
+.bikeframediv {
+    position: absolute;
+    left: 45%;
+    bottom: 18%;
+    transform: scale(1); /* 2x büyütme */
+    transform-origin: bottom left; /* Bisikletin sol alt köşesini sabit tutarak büyüt */
+}
+
+.bikebwheel {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    animation: arkaTeker 5s infinite linear;
+}
+
+.bikeframe {
+    position: absolute;
+    left: 26.76px;
+    bottom: 26.76px;
+}
+
+.bikefwheel {
+    position: absolute;
+    left: 82.15px;
+    bottom: 0;
+    animation: onTeker 5s infinite linear;
+}
+
+@keyframes onTeker {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes arkaTeker {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.umbrella {
+    position: absolute;
+    left: -15px;
+    bottom: 260px;
+    animation: umbrellaAnimation 5s infinite ease-in-out;
+}
+
+
+@keyframes umbrellaAnimation {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.sittingcat {
+    position: absolute;
+    left: -75%;
+    bottom: 0%;
+}
+
+.lookingcat {
+    position: absolute;
+    left: -20%;
+    bottom: 0%;
+}
+
+.rightlamb {
+    position: absolute;
+    right: 0%;
+    bottom: 0;
+    width: 100px;
+}
+
+.lambar {
+    position: absolute;
+    left: 100%;
+    bottom: 0;
+    transform: translateX(-100%);
+}
+
+.lambal {
+    position: absolute;
+    left: 0%;
+    bottom: 0;
+}
+
+.galatacat {
+    position: absolute;
+    left: 60%;
+    bottom: 50%;
+    width: 300px;
+}
+
+.galata {
+    position: absolute;
+    left: 0%;
+    bottom: 20px;
+}
+
+
+.walkingcat {
+    position: absolute;
+    left: 80%;
+    bottom: 25%;
+}
+
+.ip {
+    position: absolute;
+    left: 45%;
+    bottom: 14%;
+    width: 300px;
+}
+
+.hazerfen {
+    position: absolute;
+    left: 54.5%;
+    bottom: 105%;
+    width: 300px;
+    opacity: 0;
+    animation: flight 23s ease-in 0s forwards none, flights 23s ease-in 40s infinite none;
+}
+
+@keyframes flight {
+    0% {
+        transform: translateX(0px) translateY(0px) scale(0.2);
+        opacity: 0;
+    }
+    15% {
+        transform: translateX(-10px) translateY(10px) scale(0.3);
+        opacity: 0.25;
+    }
+    100% {
+        transform: translateX(-1400px) translateY(60px) scale(1.5);
+        opacity: 0.25;
+    }
+}
+
+@keyframes flights {
+    0% {
+        transform: translateX(0px) translateY(0px) scale(0.2);
+        opacity: 0;
+    }
+    15% {
+        transform: translateX(-10px) translateY(10px) scale(0.3);
+        opacity: 0.25;
+    }
+    100% {
+        transform: translateX(-1400px) translateY(60px) scale(1.5);
+        opacity: 0.25;
+    }
+}
+
+.bayrak {
+    position: absolute;
+    left: 78%;
+    bottom: 96%;
+}

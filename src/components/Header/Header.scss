@@ -1,0 +1,8 @@
+.frostedBg {
+    background: rgba(93, 161, 188, 0.05); /* Saydam beyaz */
+    backdrop-filter: blur(8px); /* Arka planı bulanıklaştır */
+    -webkit-backdrop-filter: blur(5px); /* Safari için destek */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+    transition: background-color 1s ease, color 1s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}

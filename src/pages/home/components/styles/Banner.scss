@@ -1,0 +1,91 @@
+.textResponsive2 {
+    font-size: 3.5rem;
+
+    @media (min-width: 576px) { // sm
+      font-size: 4rem;
+    }
+  
+    @media (min-width: 768px) { // md
+      font-size: 4.5rem;
+    }
+
+    @media (min-width: 992px) { // md
+      font-size: 5.3rem;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  
+    @media (min-width: 1024px) { // lg
+      font-size: 6rem;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  
+    @media (min-width: 1152px) { // lg
+      font-size: 6.3rem;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  
+    @media (min-width: 1440px) { // lg
+      font-size: 6.6rem;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+
+
+/* Sahneye Giriş */
+.animationTextIn {
+  transform: translateX(-100%);
+  opacity: 0;
+  animation: 0.5s ease-out 0s 1 toTheStage forwards;
+}
+
+@keyframes toTheStage {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%); /* Başlangıçta solda */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* Sabit kalıyor */
+  }
+}
+
+/* Sahneden Çıkış */
+.animationTextOut {
+  transform: translateX(0);
+  opacity: 1;
+  animation: 0.5s ease-in 0s 1 toTheBackStage forwards;
+}
+
+@keyframes toTheBackStage {
+  0% {
+    opacity: 1;
+    transform: translateX(0); /* Sahnenin ortasında */
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-100%); /* Tamamen kayboluyor */
+  }
+}
+
+
+.animatedRLines {
+    top: -3%;
+    left: 0%;
+    animation: animatedRLines 8s ease-in-out 4s infinite;
+    
+    @keyframes animatedRLines {
+        0% {
+        transform: translateX(0px);
+        }
+        50% {
+        transform: translateX(75px);
+        }
+        100% {
+        transform: translateX(0px);
+        }
+    }
+    }

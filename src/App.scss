@@ -1,0 +1,42 @@
+
+
+// @import './styles/custom.scss';
+@import "./styles/main.scss";
+
+
+
+
+// /* Kaydırma çubuğu tüm görünüm */
+// ::-webkit-scrollbar {
+//     width: 8px; /* Yatay kaydırma çubuğu için: height: 12px; */
+//     height: 8px;
+//   }
+  
+//   /* Kaydırma çubuğunun arka plan rengi */
+//   ::-webkit-scrollbar-track {
+//     background: rgba(12, 19, 62, 1);/* Arka plan rengi */
+//   }
+  
+//   /* Kaydırma çubuğunun kendisi */
+//   ::-webkit-scrollbar-thumb {
+//     background: rgb(249, 235, 33); /* Kaydırma çubuğunun rengi */
+//     border-radius: 10px; /* Köşe yuvarlaklığı */
+//   }
+  
+//   /* Kaydırma çubuğuna hover efekti */
+//   ::-webkit-scrollbar-thumb:hover {
+//     background: rgb(252, 241, 85); /* Hover durumunda rengi koyulaştır */
+//   }
+
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(249, 235, 33) rgba(12, 19, 62, 1);
+}
+
+  .App {
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }

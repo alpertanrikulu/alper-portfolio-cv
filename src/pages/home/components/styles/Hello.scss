@@ -1,0 +1,38 @@
+.leftSlideAnimation {
+    opacity: 0; /* Başlangıçta görünmez */
+    transform: translateX(-100px); /* Soldan dışarıda başlar */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Geçiş efektleri */
+    animation: slideIn 0.5s ease forwards;
+    animation-delay: 2s; /* 3 saniye bekleme süresi */
+  
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateX(-400px); /* Soldan başlama noktası */
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0); /* Nihai konum */
+      }
+    }
+  }
+
+.textResponsive {
+    font-size: 6rem;
+  
+    @media (min-width: 768px) { // md
+      font-size: 6.5rem;
+    }
+  
+    @media (min-width: 1024px) { // lg
+      font-size: 7rem;
+    }
+  
+    @media (min-width: 1152px) { // lg
+      font-size: 7.5rem;
+    }
+  
+    @media (min-width: 1440px) { // lg
+      font-size: 8rem;
+    }
+  }

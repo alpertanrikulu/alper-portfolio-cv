@@ -1,0 +1,46 @@
+.journeyTtitleIn {
+    animation: journeyTitleAnimationIn 1s ease-out forwards;
+    transform: translateY(-5rem);
+}
+
+@keyframes journeyTitleAnimationIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.journeyTtitleOut {
+    animation: journeyTitleOutAnimationOut 1s ease-out forwards;
+    transform: translateY(0rem);
+}
+
+@keyframes journeyTitleOutAnimationOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-5rem);
+    }
+}
+
+
+
+.skillOpacity {
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+
+
+  

@@ -1,0 +1,97 @@
+.textResponsive3 {
+    font-size: 4rem;
+
+    @media (min-width: 576px) { // sm
+      font-size: 4.3rem;
+    }
+  
+    @media (min-width: 768px) { // md
+      font-size: 4.9rem;
+    }
+  
+    @media (min-width: 1024px) { // lg
+      font-size: 5.5rem;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  
+    @media (min-width: 1152px) { // lg
+      font-size: 5.8rem;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+  
+    @media (min-width: 1440px) { // lg
+      font-size: 6rem;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+  }
+
+.leftSlideAnimation1 {
+  opacity: 0; /* Başlangıçta görünmez */
+  transform: translateX(-100px); /* Soldan dışarıda başlar */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Geçiş efektleri */
+  animation: slideIn 0.5s ease forwards;
+  animation-delay: 0.5s; /* 3 saniye bekleme süresi */
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-400px); /* Soldan başlama noktası */
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0); /* Nihai konum */
+    }
+  }
+}
+
+.rightSlideAnimation1 {
+  animation: slideOutn 1s ease forwards;
+
+  @keyframes slideOutn {
+    from {
+      opacity: 1;
+      transform: translateX(0); /* Soldan başlama noktası */
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-400px); 
+    }
+  }
+}
+
+.visionAnimationIn {
+  opacity: 0; /* Başlangıçta görünmez */
+  transform: translateY(100px); /* Aşağıdan yukarıya doğru başlar */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Geçiş efektleri */
+  animation: slideIn 0.5s ease forwards;
+  animation-delay: 0.5s; /* 3 saniye bekleme süresi */
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(400px); /* Aşağıdan başlama noktası */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Nihai konum */
+    }
+  }
+}
+
+.visionAnimationOut {
+  animation: slideOut 1s ease forwards;
+
+  @keyframes slideOut {
+    from {
+      opacity: 1;
+      transform: translateY(0); /* Aşağıdan başlama noktası */
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-400px); 
+    }
+  }
+}

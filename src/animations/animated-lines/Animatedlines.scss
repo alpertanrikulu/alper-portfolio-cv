@@ -1,0 +1,31 @@
+
+.animatedLinesDiv {
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    width: 1100px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -2;
+    }
+
+.animatedLines {
+    // color: rgba(255, 255, 255, 0.1);
+    background: none;
+    opacity: 0.5;
+    animation: animatedLines 8s ease-in-out infinite;
+    
+    @keyframes animatedLines {
+        0% {
+        transform: translateX(0px);
+        }
+        50% {
+        transform: translateX(75px);
+        }
+        100% {
+        transform: translateX(0px);
+        }
+    }
+    }
