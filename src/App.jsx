@@ -13,10 +13,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route
-            path="https://alper-portfolio-42sn0qju6-alper-tanrikulus-projects.vercel.app/contact"
-            element={<Contact />}
-          />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
       </Router>
