@@ -149,15 +149,16 @@ const Skills = () => {
                   }`}
                 >
                   <span className="opacity-50">
-                    I am someone who loves both technology and biology. I am
-                    pursuing a career in bioinformatics, where computational
-                    approaches are developed for biological systems. I also take
-                    pleasure in enhancing my programming abilities, specifically
-                    as a hobbyist creating web applications using Django.
-                    Additionally, I work on educational projects to stay updated
-                    and store them on my GitHub account. I thrive in workflows
-                    and enjoy fast-paced evolving processes. I am responsible
-                    and well-suited for teamwork.
+                    I am a junior Frontend Developer eager to build
+                    user-friendly and responsive web applications. I mainly work
+                    with React and Next.js on the frontend and use Django REST
+                    Framework for backend development. I continuously learn and
+                    improve my skills through personal projects, adapting well
+                    to evolving workflows. I thrive in collaborative
+                    environments and aim to gain more experience while creating
+                    engaging web experiences. My goal is to deepen my expertise
+                    in modern web technologies and contribute to impactful
+                    projects.
                   </span>
                 </p>
               </div>
