@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Logo from "../../assets/svg/logo.svg";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -50,31 +51,48 @@ const Header = () => {
               </a>
             </li> */}
             <li className="nav-item mx-3">
-              <a className="nav-link" aria-current="page" href="/#summary">
+              <HashLink
+                className="nav-link"
+                aria-cu
+                aria-current="page"
+                smooth
+                to="/#summary"
+              >
                 Summary
-              </a>
+              </HashLink>
             </li>
             <li className="nav-item mx-3">
-              <a className="nav-link" aria-current="page" href="/#skills">
-                Skills
-              </a>
-            </li>
-            <li className="nav-item mx-3">
-              <a
+              <HashLink
                 className="nav-link"
                 aria-current="page"
-                href="/#workExperiences"
+                smooth
+                to="/#skills"
+              >
+                Skills
+              </HashLink>
+            </li>
+            <li className="nav-item mx-3">
+              <HashLink
+                className="nav-link"
+                aria-current="page"
+                smooth
+                to="/#workExperiences"
               >
                 Work experiences
-              </a>
+              </HashLink>
             </li>
             <li className="nav-item mx-3">
-              <a className="nav-link" aria-current="page" href="/#education">
+              <HashLink
+                className="nav-link"
+                aria-current="page"
+                smooth
+                to="/#education"
+              >
                 Education
-              </a>
+              </HashLink>
             </li>
             <li className="nav-item mx-3">
-              <a href="https://alper-portfolio-1ewg6djpo-alper-tanrikulus-projects.vercel.app/contact">
+              <a href="/contact">
                 <button className="myButton ">
                   <span className="fs-5 fw-200 ffRoboto">Send me an email</span>
                 </button>
